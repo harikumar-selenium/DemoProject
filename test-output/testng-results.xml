@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[Configuration file has Browser Name: chrome]]>
+    </line>
+    <line>
+      <![CDATA[Chrome browser is set]]>
+    </line>
+    <line>
+      <![CDATA[Base Url Name: http://automationpractice.com/index.php]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20666" started-at="2020-09-05T00:22:41Z" finished-at="2020-09-05T00:23:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20666" started-at="2020-09-05T00:22:41Z" finished-at="2020-09-05T00:23:02Z">
+      <class name="com.pages.homepage.ValidateLoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pages.homepage.ValidateLoginTest@47fd17e3]" name="setUp" is-config="true" duration-ms="4238" started-at="2020-09-04T19:22:41Z" finished-at="2020-09-04T19:22:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Configuration file has Browser Name: chrome]]>
+            </line>
+            <line>
+              <![CDATA[Chrome browser is set]]>
+            </line>
+            <line>
+              <![CDATA[Base Url Name: http://automationpractice.com/index.php]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="launchWebsite()[pri:1, instance:com.pages.homepage.ValidateLoginTest@47fd17e3]" name="launchWebsite" duration-ms="4424" started-at="2020-09-04T19:22:46Z" finished-at="2020-09-04T19:22:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebsite -->
+        <test-method status="PASS" signature="verifyWebsiteLaunch()[pri:0, instance:com.pages.homepage.ValidateLoginTest@47fd17e3]" name="verifyWebsiteLaunch" duration-ms="147" started-at="2020-09-04T19:22:50Z" depends-on-methods="com.pages.homepage.ValidateLoginTest.launchWebsite" finished-at="2020-09-04T19:22:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWebsiteLaunch -->
+        <test-method status="PASS" signature="clickonSignIn()[pri:3, instance:com.pages.homepage.ValidateLoginTest@47fd17e3]" name="clickonSignIn" duration-ms="1455" started-at="2020-09-04T19:22:50Z" finished-at="2020-09-04T19:22:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonSignIn -->
+        <test-method status="PASS" signature="login()[pri:4, instance:com.pages.homepage.ValidateLoginTest@47fd17e3]" name="login" duration-ms="5650" started-at="2020-09-04T19:22:52Z" finished-at="2020-09-04T19:22:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.pages.homepage.ValidateLoginTest@47fd17e3]" name="closeDriver" is-config="true" duration-ms="4731" started-at="2020-09-04T19:22:57Z" finished-at="2020-09-04T19:23:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.pages.homepage.ValidateLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
