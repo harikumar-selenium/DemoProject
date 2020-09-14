@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\sarik\AppData\Local\Temp\testng-eclipse--535238084\testng-customsuite.xml</span>
+                    <span>C:\Users\sarik\AppData\Local\Temp\testng-eclipse--336090267\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.HerkoappTests.ValidateNewWindowTest" hash-for-method="ValidateNewWindow">ValidateNewWindow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +116,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.pages.homepage.ValidateLoginTest" hash-for-method="clickonSignIn">clickonSignIn</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.HerkoappTests.ValidateNewWindowTest" hash-for-method="clickOnNewWindow">clickOnNewWindow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.pages.homepage.ValidateLoginTest" hash-for-method="launchWebsite">launchWebsite</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.HerkoappTests.ValidateNewWindowTest" hash-for-method="clickOnOpenNewWindowlnk">clickOnOpenNewWindowlnk</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.pages.homepage.ValidateLoginTest" hash-for-method="login">login</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.HerkoappTests.ValidateNewWindowTest" hash-for-method="launchWebSite">launchWebSite</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.pages.homepage.ValidateLoginTest" hash-for-method="verifyWebsiteLaunch">verifyWebsiteLaunch</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.HerkoappTests.ValidateNewWindowTest" hash-for-method="validateWebsite">validateWebsite</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -132,38 +146,87 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.pages.homepage.ValidateLoginTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.HerkoappTests.ValidateNewWindowTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickonSignIn">
-                  </a> <!-- clickonSignIn -->
-                  <span class="method-name">clickonSignIn</span>
+                  <a name="ValidateNewWindow">
+                  </a> <!-- ValidateNewWindow -->
+                  <span class="method-name">ValidateNewWindow</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Test Page For Basic Ajax Example] but found [Windows Example Test]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.HerkoappTests.ValidateNewWindowTest.ValidateNewWindow(ValidateNewWindowTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.HerkoappTests.ValidateNewWindowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnNewWindow">
+                  </a> <!-- clickOnNewWindow -->
+                  <span class="method-name">clickOnNewWindow</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="launchWebsite">
-                  </a> <!-- launchWebsite -->
-                  <span class="method-name">launchWebsite</span>
+                  <a name="clickOnOpenNewWindowlnk">
+                  </a> <!-- clickOnOpenNewWindowlnk -->
+                  <span class="method-name">clickOnOpenNewWindowlnk</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
+                  <a name="launchWebSite">
+                  </a> <!-- launchWebSite -->
+                  <span class="method-name">launchWebSite</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyWebsiteLaunch">
-                  </a> <!-- verifyWebsiteLaunch -->
-                  <span class="method-name">verifyWebsiteLaunch</span>
+                  <a name="validateWebsite">
+                  </a> <!-- validateWebsite -->
+                  <span class="method-name">validateWebsite</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,7 +234,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sarik\AppData\Local\Temp\testng-eclipse--535238084\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\sarik\AppData\Local\Temp\testng-eclipse--336090267\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -180,7 +243,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.pages.homepage.ValidateLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.HerkoappTests.ValidateNewWindowTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -220,28 +283,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login')
-data.setCell(0, 2, 'com.pages.homepage.ValidateLoginTest')
-data.setCell(0, 3, 5650);
+data.setCell(0, 1, 'clickOnOpenNewWindowlnk')
+data.setCell(0, 2, 'com.HerkoappTests.ValidateNewWindowTest')
+data.setCell(0, 3, 5084);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'launchWebsite')
-data.setCell(1, 2, 'com.pages.homepage.ValidateLoginTest')
-data.setCell(1, 3, 4424);
+data.setCell(1, 1, 'launchWebSite')
+data.setCell(1, 2, 'com.HerkoappTests.ValidateNewWindowTest')
+data.setCell(1, 3, 3038);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clickonSignIn')
-data.setCell(2, 2, 'com.pages.homepage.ValidateLoginTest')
-data.setCell(2, 3, 1455);
+data.setCell(2, 1, 'clickOnNewWindow')
+data.setCell(2, 2, 'com.HerkoappTests.ValidateNewWindowTest')
+data.setCell(2, 3, 474);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyWebsiteLaunch')
-data.setCell(3, 2, 'com.pages.homepage.ValidateLoginTest')
-data.setCell(3, 3, 147);
+data.setCell(3, 1, 'validateWebsite')
+data.setCell(3, 2, 'com.HerkoappTests.ValidateNewWindowTest')
+data.setCell(3, 3, 16);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ValidateNewWindow')
+data.setCell(4, 2, 'com.HerkoappTests.ValidateNewWindowTest')
+data.setCell(4, 3, 16);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,6 +319,12 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ValidateNewWindow</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">CDwindow-68DD5DB6D8CB92F71B7E6BCD2EB4B9E0</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -267,31 +340,37 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.pages.homepage.ValidateLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.HerkoappTests.ValidateNewWindowTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">launchWebsite</span>
-                <span class="method-start">4244 ms</span>
+                <span class="method-name">launchWebSite</span>
+                <span class="method-start">4187 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyWebsiteLaunch</span>
-                <span class="method-start">8676 ms</span>
+                <span class="method-name">validateWebsite</span>
+                <span class="method-start">7228 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">clickonSignIn</span>
-                <span class="method-start">8824 ms</span>
+                <span class="method-name">clickOnNewWindow</span>
+                <span class="method-start">7245 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">login</span>
-                <span class="method-start">10281 ms</span>
+                <span class="method-name">clickOnOpenNewWindowlnk</span>
+                <span class="method-start">7721 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">closeDriver</span>
-                <span class="method-start">15932 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ValidateNewWindow</span>
+                <span class="method-start">12805 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">12823 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

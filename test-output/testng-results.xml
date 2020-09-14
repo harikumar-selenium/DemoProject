@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
     <line>
       <![CDATA[Configuration file has Browser Name: chrome]]>
@@ -8,15 +8,18 @@
       <![CDATA[Chrome browser is set]]>
     </line>
     <line>
-      <![CDATA[Base Url Name: http://automationpractice.com/index.php]]>
+      <![CDATA[Base Url Name: https://testpages.herokuapp.com/styled/index.html]]>
+    </line>
+    <line>
+      <![CDATA[CDwindow-68DD5DB6D8CB92F71B7E6BCD2EB4B9E0]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20666" started-at="2020-09-05T00:22:41Z" finished-at="2020-09-05T00:23:02Z">
+  <suite name="Default suite" duration-ms="13472" started-at="2020-09-12T00:37:36Z" finished-at="2020-09-12T00:37:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20666" started-at="2020-09-05T00:22:41Z" finished-at="2020-09-05T00:23:02Z">
-      <class name="com.pages.homepage.ValidateLoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pages.homepage.ValidateLoginTest@47fd17e3]" name="setUp" is-config="true" duration-ms="4238" started-at="2020-09-04T19:22:41Z" finished-at="2020-09-04T19:22:46Z">
+    <test name="Default test" duration-ms="13472" started-at="2020-09-12T00:37:36Z" finished-at="2020-09-12T00:37:49Z">
+      <class name="com.HerkoappTests.ValidateNewWindowTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.HerkoappTests.ValidateNewWindowTest@47fd17e3]" name="beforeTest" is-config="true" duration-ms="4182" started-at="2020-09-11T19:37:36Z" finished-at="2020-09-11T19:37:40Z">
           <reporter-output>
             <line>
               <![CDATA[Configuration file has Browser Name: chrome]]>
@@ -25,31 +28,78 @@
               <![CDATA[Chrome browser is set]]>
             </line>
             <line>
-              <![CDATA[Base Url Name: http://automationpractice.com/index.php]]>
+              <![CDATA[Base Url Name: https://testpages.herokuapp.com/styled/index.html]]>
             </line>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="launchWebsite()[pri:1, instance:com.pages.homepage.ValidateLoginTest@47fd17e3]" name="launchWebsite" duration-ms="4424" started-at="2020-09-04T19:22:46Z" finished-at="2020-09-04T19:22:50Z">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="launchWebSite()[pri:0, instance:com.HerkoappTests.ValidateNewWindowTest@47fd17e3]" name="launchWebSite" duration-ms="3038" started-at="2020-09-11T19:37:40Z" finished-at="2020-09-11T19:37:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="verifyWebsiteLaunch()[pri:0, instance:com.pages.homepage.ValidateLoginTest@47fd17e3]" name="verifyWebsiteLaunch" duration-ms="147" started-at="2020-09-04T19:22:50Z" depends-on-methods="com.pages.homepage.ValidateLoginTest.launchWebsite" finished-at="2020-09-04T19:22:50Z">
+        </test-method> <!-- launchWebSite -->
+        <test-method status="PASS" signature="validateWebsite()[pri:0, instance:com.HerkoappTests.ValidateNewWindowTest@47fd17e3]" name="validateWebsite" duration-ms="16" started-at="2020-09-11T19:37:43Z" depends-on-methods="com.HerkoappTests.ValidateNewWindowTest.launchWebSite" finished-at="2020-09-11T19:37:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWebsiteLaunch -->
-        <test-method status="PASS" signature="clickonSignIn()[pri:3, instance:com.pages.homepage.ValidateLoginTest@47fd17e3]" name="clickonSignIn" duration-ms="1455" started-at="2020-09-04T19:22:50Z" finished-at="2020-09-04T19:22:52Z">
+        </test-method> <!-- validateWebsite -->
+        <test-method status="PASS" signature="clickOnNewWindow()[pri:0, instance:com.HerkoappTests.ValidateNewWindowTest@47fd17e3]" name="clickOnNewWindow" duration-ms="474" started-at="2020-09-11T19:37:43Z" depends-on-methods="com.HerkoappTests.ValidateNewWindowTest.validateWebsite" finished-at="2020-09-11T19:37:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickonSignIn -->
-        <test-method status="PASS" signature="login()[pri:4, instance:com.pages.homepage.ValidateLoginTest@47fd17e3]" name="login" duration-ms="5650" started-at="2020-09-04T19:22:52Z" finished-at="2020-09-04T19:22:57Z">
+        </test-method> <!-- clickOnNewWindow -->
+        <test-method status="PASS" signature="clickOnOpenNewWindowlnk()[pri:0, instance:com.HerkoappTests.ValidateNewWindowTest@47fd17e3]" name="clickOnOpenNewWindowlnk" duration-ms="5084" started-at="2020-09-11T19:37:44Z" depends-on-methods="com.HerkoappTests.ValidateNewWindowTest.clickOnNewWindow" finished-at="2020-09-11T19:37:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.pages.homepage.ValidateLoginTest@47fd17e3]" name="closeDriver" is-config="true" duration-ms="4731" started-at="2020-09-04T19:22:57Z" finished-at="2020-09-04T19:23:02Z">
+        </test-method> <!-- clickOnOpenNewWindowlnk -->
+        <test-method status="FAIL" signature="ValidateNewWindow()[pri:0, instance:com.HerkoappTests.ValidateNewWindowTest@47fd17e3]" name="ValidateNewWindow" duration-ms="16" started-at="2020-09-11T19:37:49Z" depends-on-methods="com.HerkoappTests.ValidateNewWindowTest.clickOnOpenNewWindowlnk" finished-at="2020-09-11T19:37:49Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Test Page For Basic Ajax Example] but found [Windows Example Test]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Test Page For Basic Ajax Example] but found [Windows Example Test]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.HerkoappTests.ValidateNewWindowTest.ValidateNewWindow(ValidateNewWindowTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[CDwindow-68DD5DB6D8CB92F71B7E6BCD2EB4B9E0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ValidateNewWindow -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.HerkoappTests.ValidateNewWindowTest@47fd17e3]" name="afterTest" is-config="true" duration-ms="646" started-at="2020-09-11T19:37:49Z" finished-at="2020-09-11T19:37:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- com.pages.homepage.ValidateLoginTest -->
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.HerkoappTests.ValidateNewWindowTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
