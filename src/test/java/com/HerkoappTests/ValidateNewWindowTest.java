@@ -63,7 +63,7 @@ public class ValidateNewWindowTest {
   @Test(dependsOnMethods="clickOnOpenNewWindowlnk")
   public void ValidateNewWindow()
   {
-	  //sdsdsa
+	  //sdsdsa sdasd
 	  String parentWindow=driver.getWindowHandle();
 	  Reporter.log(driver.getWindowHandle(),true);
 	  //driver.getWindowHandles();
